@@ -3,6 +3,8 @@ export { middlewareLogin } from './middlewareLogin';
 export { middlewareAuth } from './middlewareAuth';
 export { middlewareUpdateUser } from './middlewareUpdateUser';
 export { middlewareUploadFile } from './middlewareUploadFile';
+export { middlewareAddReview } from './middlewareAddReview';
+export { middlewareUpdateReview } from './middlewareUpdateReview';
 export { middlewareAddTask } from './middlewareAddTask';
 export { middlewareUpdateTask } from './middlewareUpdateTask';
 export { isValidId } from './isValidId';
