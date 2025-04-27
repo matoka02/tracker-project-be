@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { Review } from '../../models/review';
+import { Review } from '@/models/review';
 
 export const updateReviewController = async (req: Request, res: Response) => {
   try {

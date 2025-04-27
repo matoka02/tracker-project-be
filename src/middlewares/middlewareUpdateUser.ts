@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 
-import { updateUserJoiSchema } from '../models/user';
-import { validateDate } from '../services';
+import { updateUserJoiSchema } from '@/models/user';
+import { validateDate } from '@/services';
 
 export const middlewareUpdateUser = async (
   req: Request,

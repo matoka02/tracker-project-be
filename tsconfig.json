@@ -13,9 +13,6 @@
       "./node_modules/@types",
       "./src/types"
     ],
-    "paths": {
-      "@/*": ["./src/*"]
-    },
     /* JavaScript Support */
     /* Emit */
     "outDir": "./dist",
@@ -29,6 +26,12 @@
     // "skipDefaultLibCheck": true,                      
     "skipLibCheck": true,
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "extends": "./tsconfig.paths.json",
 }

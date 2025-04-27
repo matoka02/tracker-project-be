@@ -1,9 +1,9 @@
 import Joi from 'joi';
 import { Model, model, models, Schema } from 'mongoose';
 
-import { validateJoiStartEndTime } from '../services';
-
 import { IAuthUser } from './user';
+
+import { validateJoiStartEndTime } from '@/services';
 
 // ------------------------------------ INTERFACES --------------------------------------
 interface ITask {

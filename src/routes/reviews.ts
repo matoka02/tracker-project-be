@@ -6,12 +6,12 @@ import {
   getReviewController,
   deleteReviewController,
   updateReviewController,
-} from '../controllers/reviews';
+} from '@/controllers/reviews';
 import {
   middlewareAuth,
   middlewareAddReview,
   middlewareUpdateReview,
-} from '../middlewares';
+} from '@/middlewares';
 
 const router = express.Router();
 

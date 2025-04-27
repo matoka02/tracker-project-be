@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { Task } from '../../models/task';
+import { Task } from '@/models/task';
 
 export const addTaskController = async (req: Request, res: Response) => {
   const { _id: owner } = req.user as { _id: string };

@@ -5,13 +5,13 @@ import {
   addTaskController,
   removeTaskController,
   updateTaskController,
-} from '../controllers/tasks';
+} from '@/controllers/tasks';
 import {
   middlewareAuth,
   middlewareAddTask,
   middlewareUpdateTask,
   isValidId,
-} from '../middlewares';
+} from '@/middlewares';
 
 const router = express.Router();
 

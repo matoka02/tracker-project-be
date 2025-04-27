@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 
-import { addTaskJoiSchema } from '../models/task';
-import { validateDate, convertTimeToMinutes } from '../services';
+import { addTaskJoiSchema } from '@/models/task';
+import { validateDate, convertTimeToMinutes } from '@/services';
 
 export const middlewareAddTask = async (
   req: Request,

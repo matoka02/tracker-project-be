@@ -6,14 +6,14 @@ import {
   logoutController,
   currentUserController,
   updateUserController,
-} from '../controllers/users';
+} from '@/controllers/users';
 import {
   middlewareRegister,
   middlewareLogin,
   middlewareAuth,
   middlewareUpdateUser,
   middlewareUploadFile,
-} from '../middlewares';
+} from '@/middlewares';
 
 const router = express.Router();
 

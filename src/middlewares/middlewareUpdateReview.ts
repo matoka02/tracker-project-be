@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 
-import { updateReviewJoiSchema } from '../models/review';
+import { updateReviewJoiSchema } from '@/models/review';
 
 export const middlewareUpdateReview = async (
   req: Request,

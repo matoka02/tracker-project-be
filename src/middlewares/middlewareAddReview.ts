@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 
-import { addReviewJoiSchema } from '../models/review';
-import { Review } from '../models/review';
+import { addReviewJoiSchema } from '@/models/review';
+import { Review } from '@/models/review';
 
 export const middlewareAddReview = async (
   req: Request,

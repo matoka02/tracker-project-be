@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 
-import { loginUserJoiSchema } from '../models/user';
+import { loginUserJoiSchema } from '@/models/user';
 
 export const middlewareLogin = async (
   req: Request,

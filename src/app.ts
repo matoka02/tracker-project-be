@@ -5,9 +5,9 @@ import express from 'express';
 import logger from 'morgan';
 
 /* eslint-disable import/order*/
-import usersRouter from './routes/users';
-import reviewsRouter from './routes/reviews';
-import tasksRouter from './routes/tasks';
+import usersRouter from '@/routes/users';
+import reviewsRouter from '@/routes/reviews';
+import tasksRouter from '@/routes/tasks';
 
 // Initialize environment variables
 require('dotenv').config();

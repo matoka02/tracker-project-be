@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { User } from '../../models/user';
+import { User } from '@/models/user';
 
 export const updateUserController = async (req: Request, res: Response) => {
   const { _id } = req.user as { _id: string };
