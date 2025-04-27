@@ -6,6 +6,7 @@ import logger from 'morgan';
 
 /* eslint-disable import/order*/
 import usersRouter from './routes/users';
+import tasksRouter from './routes/tasks';
 
 // Initialize environment variables
 require('dotenv').config();
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // ================================================= ROUTES =========================================
 app.use('/api/v1/users', usersRouter);
+app.use('/api/v1/tasks', tasksRouter);
 
 // ================================================= ERROR CATCHERS =========================================
 app.use((req, res) => {
