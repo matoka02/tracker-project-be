@@ -13,7 +13,10 @@
     "fix": "npm run format && npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository":{},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matoka02/tracker-project-be.git"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -55,6 +58,7 @@
     "nodemon": "^3.1.10",
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.8.3"
   },
   "lint-staged": {
