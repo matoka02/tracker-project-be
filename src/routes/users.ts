@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
  * /users/register:
  *   post:
  *     tags: [Users]
- *     summary: User registration
+ *     summary: "User registration"
  *     parameters: []
  *     security: []
  *     requestBody:
@@ -58,7 +58,7 @@ router.post('/register', middlewareRegister, registerController);
  * /users/login:
  *   post:
  *     tags: [Users]
- *     summary: User authentication
+ *     summary: "User authentication"
  *     parameters: []
  *     security: []
  *     requestBody:
@@ -88,7 +88,7 @@ router.post('/login', middlewareLogin, loginController);
  * /users/logout:
  *   post:
  *     tags: [Users]
- *     summary: User logout
+ *     summary: "User logout"
  *     parameters: []
  *     security: [{ Bearer: [] }]
  *     responses:
@@ -108,7 +108,7 @@ router.post('/logout', middlewareAuth, logoutController);
  * /users/current:
  *   get:
  *     tags: [Users]
- *     summary: Get current user
+ *     summary: "Get current user"
  *     parameters: []
  *     security: [{ Bearer: [] }]
  *     responses:
@@ -131,7 +131,7 @@ router.get('/current', middlewareAuth, currentUserController);
  * /users/edit:
  *   patch:
  *     tags: [Users]
- *     summary: User update
+ *     summary: "User update"
  *     parameters: []
  *     security: [{ Bearer: [] }]
  *     requestBody:
