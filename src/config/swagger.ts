@@ -18,7 +18,10 @@ const options: swaggerJSDoc.Options = {
         url: 'http://localhost:3000/api/v1',
       },
     ],
-    tags: [{ name: 'Users', description: 'Users endpoints' }],
+    tags: [
+      { name: 'Users', description: 'Users endpoints' },
+      { name: 'Tasks', description: 'Tasks endpoints' },
+    ],
     components: {
       securitySchemes: {
         Bearer: { type: 'http', scheme: 'bearer', bearerFormat: 'JWT' },
@@ -27,12 +30,18 @@ const options: swaggerJSDoc.Options = {
   },
 
   apis: [
-    './src/routes/*.ts',
-    /** Authentication */
+    './src/routes/users.ts',
+    './src/routes/tasks.ts',
+    /** Authentication. Request and Response */
     './src/dto/auth/register.dto.ts',
     './src/dto/auth/login.dto.ts',
     './src/dto/auth/userCurrent.dto.ts',
     './src/dto/auth/userUpdate.dto.ts',
+    /** Tasks. Request and Response */
+    './src/dto/tasks/getTasks.dto.ts',
+    './src/dto/tasks/postTask.dto.ts',
+    './src/dto/tasks/patchTask.dto.ts',
+    './src/dto/tasks/deleteTask.dto.ts',
   ],
 };
 
