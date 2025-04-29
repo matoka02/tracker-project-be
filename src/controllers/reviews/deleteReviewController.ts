@@ -15,7 +15,10 @@ export const deleteReviewController = async (req: Request, res: Response) => {
       return;
     }
 
-    res.status(204).end();
+    res.status(200).json({
+      status: 200,
+      message: `Your review deleted successfully`,
+    });
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : 'Server error';
     res.status(500).json({ message });
