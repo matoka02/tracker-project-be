@@ -21,6 +21,7 @@ const options: swaggerJSDoc.Options = {
     tags: [
       { name: 'Users', description: 'Users endpoints' },
       { name: 'Tasks', description: 'Tasks endpoints' },
+      { name: 'Reviews', description: 'Reviews endpoints' },
     ],
     components: {
       securitySchemes: {
@@ -32,6 +33,7 @@ const options: swaggerJSDoc.Options = {
   apis: [
     './src/routes/users.ts',
     './src/routes/tasks.ts',
+    './src/routes/reviews.ts',
     /** Authentication. Request and Response */
     './src/dto/auth/register.dto.ts',
     './src/dto/auth/login.dto.ts',
@@ -42,6 +44,12 @@ const options: swaggerJSDoc.Options = {
     './src/dto/tasks/postTask.dto.ts',
     './src/dto/tasks/patchTask.dto.ts',
     './src/dto/tasks/deleteTask.dto.ts',
+    /** Reviews. Request and Response */
+    './src/dto/reviews/getAllReviews.dto.ts',
+    './src/dto/reviews/getOwnReview.dto.ts',
+    './src/dto/reviews/postOwnReview.dto.ts',
+    './src/dto/reviews/patchOwnReview.dto.ts',
+    './src/dto/reviews/deleteOwnReview.dto.ts',
   ],
 };
 
