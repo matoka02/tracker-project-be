@@ -3,11 +3,13 @@ import path from 'path';
 import cors from 'cors';
 import express from 'express';
 import logger from 'morgan';
+import swaggerUi from 'swagger-ui-express';
 
 /* eslint-disable import/order*/
 import usersRouter from '@/routes/users';
-import reviewsRouter from '@/routes/reviews';
 import tasksRouter from '@/routes/tasks';
+import reviewsRouter from '@/routes/reviews';
+import { swaggerSpec } from './config/swagger';
 
 // Initialize environment variables
 require('dotenv').config();
@@ -23,8 +25,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // ================================================= ROUTES =========================================
 app.use('/api/v1/users', usersRouter);
-app.use('/api/v1/reviews', reviewsRouter);
 app.use('/api/v1/tasks', tasksRouter);
+app.use('/api/v1/reviews', reviewsRouter);
+
+// ================================================= SWAGGER =========================================
+app.use('/api/v1/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // ================================================= ERROR CATCHERS =========================================
 app.use((req, res) => {
