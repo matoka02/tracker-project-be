@@ -57,10 +57,12 @@
  *               example: "!!!!!"
  *             createdAt:
  *               type: string
+ *               format: date-time
  *               description: "Date of user creation"
  *               example: "!!!!!"
  *             updatedAt:
  *               type: string
+ *               format: date-time
  *               description: "Date of user update"
  *               example: "!!!!!"
  *       example:

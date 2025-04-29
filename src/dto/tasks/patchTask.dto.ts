@@ -25,7 +25,7 @@
  *           example: "low"
  *         date:
  *           type: string
- *           match: dateRegexp
+ *           format: date
  *           example: "2025-04-28"
  *         category:
  *           type: string
